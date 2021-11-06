@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Candara;
+    font-weight: normal;
+    src: url(Candara.ttf);
+}
+
+@font-face {
+    font-family: Candara;
+    font-weight: bold;
+    src: url(Candarab.ttf);
+}
+
+@font-face {
+    font-family: 'Comic Sans MS';
+    font-weight: normal;
+    src: url(comic.ttf);
+}
+
+@font-face {
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    src: url(comicbd.ttf);
+}

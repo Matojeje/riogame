@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body class="centered">
+    <div id="container" class="centered fullscreen">
+        <section id="loading" class="centered fullscreen">
+            <p class="transparent">
+                X<br>
+                X<br>
+                <small>X</small> 
+            </p>
+            <!-- <progress value=0 max=100></progress><br> -->
+            <button onclick="load()">►</button>
+            <p>
+                Original game by Ray<br>
+                HTML5 <span title="More like rewrite from scratch">port*</span> by Mato<br>
+                <small>This screen is only here for audio autoplay to work</small>
+            </p>
+        </section>
+        <section id="titlescreen">
+            <!-- <div id="mobileheader">
+                <img src="img/title.webp" width=100%>
+            </div> -->
+            <main>
+                <p>
+                    Welcome to High School Riunion! This is a point-and-click adventure
+                    where you have to talk with all the Ris to see if they're still the same
+                    zany little dudes from their high school days. Talk with every Ri in
+                    order to unlock the special birthday door and view the special birthday
+                    ending!
+                </p>
+                <p>
+                    This is made for <a href="https://twitter.com/rioisok>">@Rioisok</a>'s 20th birthday. Happy birthday dude! &lt;3
+                </p>
+                <p>
+                    Controls:<br>
+                    Click with the left mouse button to travel into new rooms (by clicking
+                    doors) and talk with a Ri (by clicking a Ri). Have fun! 
+                </p>
+                <p class="centered">
+                    <img class="hoverable" src="img/play.webp" width=237 tabindex=0 onclick="play()">
+                </p>
+            </main>
+            <audio id="menutheme" preload="auto" onended="replay(this)">
+                <source src="sound/lullabytime.opus" type="audio/ogg", codecs=vorbis>
+                <source src="sound/lullabytime.ogg" type="audio/ogg", codecs=opus>
+            </audio>
+        </section>
+        <section id="ingame" hidden>
+            <audio id="maintheme" preload="auto" onended="replay(this)">
+                <source src="sound/wahwah.opus" type="audio/ogg", codecs=vorbis>
+                <source src="sound/wahwah.ogg" type="audio/ogg", codecs=opus>
+            </audio>
+            <audio id="door" src="sound/door.ogg" preload="auto"></audio>
+            <audio id="party" src="sound/party.ogg" preload="auto"></audio>
+            <main id="rooms"></main>
+            <aside id="portrait" class="centered fullscreen">
+                <img>
+                <output id="dialogbox">Hello</output>
+                <audio id="babble"></audio>
+            </aside>
+        </section>
+    </div>
+    <script src="gamedata.js"></script>
+    <script src="game.js"></script>
+
+    <script src="animalese/riffwave.js"></script>
+    <script src="animalese/Blob.js"></script>
+    <script src="animalese/FileSaver.min.js"></script>
+    <script src="animalese/animalese.js"></script>
+</body>
+</html>

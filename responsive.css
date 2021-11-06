@@ -1,0 +1,49 @@
+@media screen and (min-aspect-ratio: 1/1) and (max-width: 1000px) {
+    #loading {
+        top: 0px;
+        left: 0px;
+        width: 977px;
+        height: 779px;
+        font-size: larger;
+    }
+    #loading.loaded {
+        transform: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-aspect-ratio: 1/1) and (max-width: 1000px) {
+    #mobileheader {
+        display: block;
+        width: 100%;
+        height: 27vw;
+        overflow: hidden;
+    }
+    #titlescreen {
+        width: 100vw;
+        height: max-content;
+        background: white;
+        
+        /* 9-patch approach */
+        border-image-source: url("img/title.webp");
+        border-image-slice: 300 80 70 80 fill;
+        border-image-width: 27vw 7vw 6vw 7vw;
+        border-image-outset: 0px 0px 0px 0px;
+        border-image-repeat: stretch stretch;
+    }
+    #titlescreen main {
+        width: 80%;
+        left: 10%;
+        top: unset;
+        padding-top: 27vw;
+        padding-bottom: 6vw;
+    }
+    #loading.loaded {
+        transform: none;
+    }
+}
